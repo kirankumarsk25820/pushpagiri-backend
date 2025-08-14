@@ -10,9 +10,9 @@ router.post('/', async (req, res) => {
 });
 
 // Get all submissions
-router.get('/', async (req, res) => {
-  const submissions = await Submission.find();
-  res.json(submissions);
+router.get('/', (req, res) => {
+  res.send('Submissions route working!');
 });
+
 
 module.exports = router;
